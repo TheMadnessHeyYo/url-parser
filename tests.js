@@ -1,7 +1,11 @@
 
 // Include all tests that you want to run here.
 function runTests() {
+	console.log('----------------------------------------');
 	wellformedTests();
+	console.log('----------------------------------------');
+	malformedTests();
+	console.log('----------------------------------------');
 }
 
 // Test Format:
@@ -18,6 +22,16 @@ function wellformedTests() {
 
 	console.log('file');
 	console.log(parseUrl("file://lsa.umich.edu/#q=physics&start=0&hasnext=true&mode=gsa&site=LSA"));
+}
+
+function malformedTests() {
+	console.log("malformedTests");
+
+	console.log("bad protocol");
+	console.log(parseUrl("httaps://lsa.umich.edu/#q=physics&start=0&hasnext=true&mode=gsa&site=LSA"));
+
+	console.log("misplaced protocol");
+	console.log(parseUrl("lsa.umich.edu/http://#q=physics&start=0&hasnext=true&mode=gsa&site=LSA"));
 }
 
 
