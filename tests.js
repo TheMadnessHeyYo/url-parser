@@ -25,13 +25,13 @@ function wellformedTests() {
 }
 
 function malformedTests() {
-	console.log("malformedTests");
+	console.log('malformedTests');
 
-	console.log("bad protocol");
-	console.log(parseUrl("httaps://lsa.umich.edu/#q=physics&start=0&hasnext=true&mode=gsa&site=LSA"));
+	console.log('bad protocol');
+	console.log(parseUrl('httaps://lsa.umich.edu/#first=charlie&last=brown'));
 
-	console.log("misplaced protocol");
-	console.log(parseUrl("lsa.umich.edu/http://#q=physics&start=0&hasnext=true&mode=gsa&site=LSA"));
+	console.log('misplaced protocol');
+	console.log(parseUrl('lsa.umich.edu/http://#first=charlie&last=brown'));
 }
 
 
