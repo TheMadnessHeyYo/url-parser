@@ -25,6 +25,7 @@ References
 
 	Strings: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
+	Static methods: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
 
 Wish-List
 
