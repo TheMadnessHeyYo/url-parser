@@ -14,3 +14,9 @@ References
 	ES2016: https://github.com/DrkSephy/es6-cheatsheet
 	RegEx: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
 
+
+
+Wish-List
+
+	1. It would be nice to have the tests print their names from the function signature rather than by hardcoding the name into the string.
+
