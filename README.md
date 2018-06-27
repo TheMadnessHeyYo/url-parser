@@ -12,8 +12,10 @@ Studies:
 
 References
 	ES2016: https://github.com/DrkSephy/es6-cheatsheet
-	RegEx: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
-
+	RegEx:
+		Regexr: https://regexr.com/3rker
+		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
+		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
 
 
 Wish-List
