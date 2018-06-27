@@ -3,11 +3,11 @@ function parseUrl(url) {
 
 	// Create return object with default key-value pairs.
 	var urlData = {
-		malformed: false,
-		url: "",
-		protocol: "",
-		queryParams: {},
-		hashParams: {}
+		url: url,			// Stash the entire url string.
+		urlObject: null,	// Will contain pointer to built-in URL object.
+		malformed: false,	// true indicates the url is malformed.
+		queryParams: {},	// Holds the query params key-values if present.
+		hashParams: {}		// Holds the hash params key-values if present.
 	}
 
 	// Store a flag to indicate if the url is malformed.
