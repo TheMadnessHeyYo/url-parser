@@ -2,6 +2,12 @@
 // Include all tests that you want to run here.
 function runTests() {
 	console.log('----------------------------------------');
+	queryAndHashTests();
+	console.log('----------------------------------------');
+	queryTests();
+	console.log('----------------------------------------');
+	hashTests();
+	console.log('----------------------------------------');
 	wellformedTests();
 	console.log('----------------------------------------');
 	malformedTests();
@@ -10,6 +16,21 @@ function runTests() {
 
 // Test Format:
 // - Use two separate console logs so that the object is inspectable in the browser dev-tools console.
+
+function queryAndHashTests() {
+	console.log('queryAndHashTests');
+	console.log(parseUrl('http://lsa.umich.edu/?first=charlie&last=brown#team=lions&city=detroit'));
+}
+
+function queryTests() {
+	console.log('queryTests');
+	console.log(parseUrl('http://lsa.umich.edu/?first=charlie&last=brown'));
+}
+
+function hashTests() {
+	console.log('hashTests');
+	console.log(parseUrl('http://lsa.umich.edu/#first=charlie&last=brown'));
+}
 
 function wellformedTests() {
 	console.log('wellformedTests');
