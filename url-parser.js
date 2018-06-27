@@ -11,6 +11,15 @@ function parseUrl(url) {
 	// Stash the entire url.
 	urlData["url"] = url;
 
+	
+	// Determine protocol.
+	var regex = /(^https?|^file):\/\//;
+	if (regex.test(url)) {
+		urlData["protocol"] = RegExp.lastMatch;
+	} else {
+		urlData.malformed = true;
+		return urlData;
+	}
 
 	return urlData;
 }
